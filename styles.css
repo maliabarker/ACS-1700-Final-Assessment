@@ -1,0 +1,82 @@
+/* —————————————Displaying sections in a grid——————————————————— */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "of od"
+                         "of ov";
+    grid-gap: 2rem;
+    font-family: Helvetica
+}
+
+/* —————————————Displaying section content using flex——————————————————— */
+section {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    width: 330px;
+    height: 300px;
+    padding: 0px 20px 20px 20px;
+}
+
+/* ————————————Styling sections———————————————————— */
+h1 {
+    font-size: 2rem;
+}
+/* ————————————Order form section———————————————————— */
+#order-form {
+    justify-content: flex-start;
+    justify-self: end;
+    grid-area: of;
+    height: 654px;
+}
+
+#order-form h1 {
+    margin-bottom: 10px;
+}
+
+#order-form label {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#name-input {
+    border-radius: 0;
+    border: solid 1px;
+    padding: 5px;
+}
+
+#topping-input {
+    padding: 5px;
+}
+
+/* ——————————————Order details section—————————————————— */
+#order-details {
+    line-height: 5px;
+    align-self: end;
+    justify-self: start;
+    align-self: end;
+    justify-content: flex-start;
+}
+
+#order-details h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+#name-display, #diameter-display, #cost-display {
+    padding-left: 20px;
+}
+
+/* ———————————————Styling the pizza—————————————————— */
+#pizza {
+    border-radius: 50%;
+    align-self: center;
+    justify-self: flex-start;
+    background-size: cover;
+}

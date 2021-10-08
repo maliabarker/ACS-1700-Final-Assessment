@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza Printer</title>
+        <!-- import style sheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main>
+            <section id="order-form">
+                <h1>Order Form</h1>
+                <label for="name-input">Order name</label>
+                <input type="text" id="name-input">
+                <label for="diameter-input">Diameter (in inches)</label>
+                <input type="range" id="diameter-input" min="6" max="100">
+                <label for="topping-input">Choose Topping</label>
+                <select id="topping-input">
+                    <option id="cheese">Cheese</option>
+                    <option id="pep">Pepperoni</option>
+                    <option id="sausage">Sausage</option>
+                    <option id="onion">Onion</option>
+                    <option id="tomato">Tomato</option>
+                </select>
+            </section>
+
+            <section id="order-details">
+                <h1>Order Details</h1>
+                <div id="details">
+                    <p>Name: </p>
+                    <p id="name-display"></p>
+                </div>
+                <div id="details">
+                    <p>Diameter: </p>
+                    <p id="diameter-display"></p>
+                </div>
+                <div id="details">
+                    <p>Cost: </p>
+                    <p id="cost-display"></p>
+                </div>
+            </section>
+
+            <section id="order-visualization">
+                <h1>Order Visualization</h1>
+                <div id="pizza"></div>
+            </section>
+        </main>
+        <script src="scripts.js" type="module"></script>
+    </body>
+</html>
